@@ -11,62 +11,320 @@
 
 
     <!-- Boden  -->
-    <a-entity position="0 0 -24.85" rotation="-90 0 0" id="boden" geometry="primitive:plane;height:250;width:100" material="color:#000000"></a-entity>
-
+      <a-entity position="0 0 -48.98" rotation="-90 0 0" id="boden" geometry="primitive:plane;height:300;width:80" material="color:#000000"></a-entity>
 
     <!-- 4 Wände -->
-    <a-entity position="0.36 14.84 -148.87" id="wand1" geometry="width:100;height:30;primitive:plane" material="side:double;color:#808080"></a-entity>
+      <a-entity position="0.36 24.51 -198.57" id="wand1" geometry="width:80;height:50;primitive:plane" material="side:double;color:#808080"></a-entity>
 
-    <a-entity position="0.36 14.88 99.68" id="wand2" geometry="width:100;height:30;primitive:plane" material="side:double;color:#808080" rotation="0 180 0" scale="1 1 1" visible="true"></a-entity>
+      <a-entity position="0.36 24.89 100.1" id="wand2" geometry="width:80;height:50;primitive:plane" material="side:double;color:#808080" rotation="0 180 0" scale="1 1 1" visible="true"></a-entity>
 
-    <a-entity position="-48.94 14.6 -23.81" id="wand3" geometry="width:250;height:30;primitive:plane" material="side:double;color:#808080" rotation="0 90 0" scale="1 1 1" visible="true"></a-entity>
+      <a-entity position="-39.4 14.6 -49.92" id="wand3" geometry="width:300;height:30;primitive:plane" material="side:double;color:#808080" rotation="0 90 0" scale="1 1 1" visible="true"></a-entity>
 
-    <a-entity position="49.59 14.64 -24.62" id="wand4" geometry="width:250;height:30;primitive:plane" material="side:double;color:#808080" rotation="0 270 0" scale="1 1 1" visible="true"></a-entity>
+      <a-entity position="40.3 14.16 -49.8" id="wand4" geometry="width:300;height:30;primitive:plane" material="side:double;color:#808080" rotation="0 270 0" scale="1 1 1" visible="true"></a-entity>
 
-    <!-- Dach -->
-    <a-entity position="26.58 41.22 -24.47" rotation="65 -90 0" id="dach1" geometry="primitive:plane;width:250;height:58;buffer:true" material="side:front;flatShading:false;shader:standard;transparent:true;color:#808080"></a-entity>
+      <!-- Dach -->
 
-    <a-entity position="-25.23 40.77 -23.59" rotation="65 90 0" id="dach2" geometry="primitive:plane;width:250;height:58" material="side:front;shader:standard" scale="1 1 1" visible="true"></a-entity>
+      <a-entity position="26.58 35.26 -49.71" rotation="65 -90 0" id="dach1" geometry="primitive:plane;width:300;height:58;buffer:true" material="side:double;shader:standard;color:#2e2e2e"></a-entity>
 
-    <!-- Querstreben -->
-    <a-entity position="0 24.47 24.99" id="querstrebe" geometry="width:100;height:3;depth:3" material="color:#808080"></a-entity>
+      <a-entity position="-25.85 35.48 -49.91" rotation="65 90 0" id="dach2" geometry="primitive:plane;width:300;height:58" material="side:double;shader:standard" scale="1 1 1" visible="true"></a-entity>
 
-    <a-entity position="-0.44 24.36 -7.63" id="querstrebe-2" geometry="width:100;height:3;depth:3" material="color:#808080" rotation="0 0 0" scale="1 1 1" visible="true"></a-entity>
+       <!-- Querstreben -->
 
-    <a-entity position="0 24.47 -35.97" id="querstrebe-3" geometry="width:100;height:3;depth:3" material="color:#808080" rotation="0 0 0" scale="1 1 1" visible="true"></a-entity>
+      <a-entity position="0 24.47 17.31" id="querstrebe" geometry="width:100;height:3;depth:3" material="color:#808080"></a-entity>
 
-    <a-entity position="0 24.47 63.28" id="querstrebe-4" geometry="width:100;height:3;depth:3" material="color:#808080" rotation="0 0 0" scale="1 1 1" visible="true"></a-entity>
+      <a-entity position="-0.44 24.36 -26.4" id="querstrebe-2" geometry="width:100;height:3;depth:3" material="color:#808080" rotation="0 0 0" scale="1 1 1" visible="true"></a-entity>
 
-    <a-entity position="0 24.47 -78.32" id="querstrebe-5" geometry="width:100;height:3;depth:3" material="color:#808080" rotation="0 0 0" scale="1 1 1" visible="true"></a-entity>
+      <a-entity position="0 24.47 -70.82" id="querstrebe-3" geometry="width:100;height:3;depth:3" material="color:#808080" rotation="0 0 0" scale="1 1 1" visible="true"></a-entity>
 
-    <a-entity position="0 24.47 -115.11" id="querstrebe-6" geometry="width:100;height:3;depth:3" material="color:#808080" rotation="0 0 0" scale="1 1 1" visible="true"></a-entity>
+      <a-entity position="0 24.47 63.28" id="querstrebe-4" geometry="width:100;height:3;depth:3" material="color:#808080" rotation="0 0 0" scale="1 1 1" visible="true"></a-entity>
+
+      <a-entity position="0 24.47 -117.7" id="querstrebe-5" geometry="width:100;height:3;depth:3" material="color:#808080" rotation="0 0 0" scale="1 1 1" visible="true"></a-entity>
+
+      <a-entity position="0 24.47 -164.39" id="querstrebe-6" geometry="width:100;height:3;depth:3" material="color:#808080" rotation="0 0 0" scale="1 1 1" visible="true"></a-entity>
 
     <!-- Rohre -->
-    <a-entity position="-26.65 21.5 -24.47" rotation="90 0 0" id="rohr" geometry="primitive:cylinder;radius:1.9;height:180" material="color:#c0c0c0"></a-entity>
+      <a-entity position="-26.65 20.71 -51.42" rotation="90 0 0" id="rohr" geometry="primitive:cylinder;radius:2.5;height:305" material="color:#c0c0c0"></a-entity>
 
-    <a-entity position="2.63 21.4 -24.47" rotation="90 0 0" id="rohr-2" geometry="primitive:cylinder;radius:1.98;height:180" material="color:#c0c0c0" scale="1 1 1" visible="true"></a-entity>
+      <a-entity position="1.48 22.09 -50.75" rotation="90 0 0" id="rohr-2" geometry="primitive:cylinder;radius:0.8;height:305" material="color:#e8e8e8" scale="1 1 1" visible="true"></a-entity>
+      <a-entity position="4.63 22.09 -50.75" rotation="90 0 0" id="rohr-3" geometry="primitive:cylinder;radius:0.8;height:305" material="color:#e8e8e8" scale="1 1 1" visible="true"></a-entity>
 
-    <a-entity position="32.06 21.31 -24.47" rotation="90 0 0" id="rohr-3" geometry="primitive:cylinder;radius:1.9;height:180" material="color:#c0c0c0" scale="1 1 1" visible="true"></a-entity>
+      <a-entity position="32.06 20.46 -51.57" rotation="90 0 0" id="rohr-4" geometry="primitive:cylinder;radius:2.5;height:305" material="color:#c0c0c0" scale="1 1 1" visible="true"></a-entity>
 
-    <!-- Inneneinrichtung -->
-    <a-entity position="-20 1.88 25" id="tisch" geometry="height:4;width:10;depth:40" material=""></a-entity>
-    <a-entity position="25.02 4.78 24.91" id="tisch_addon" geometry="width:6;depth:35;height:2" material=""></a-entity>
+      <!-- Pfeiler -->
 
-    <a-entity position="25 1.88 25" id="tisch-2" geometry="height:4;width:10;depth:40" material="" rotation="0 0 0" scale="1 1 1" visible="true"></a-entity>
+      <a-entity position="-13.79 24.78 -26.49" id="pfeiler1" geometry="height:50;width:2.5;depth:2.5" material="color:#c0c0c0">
+        <a-entity position="0 -22.27 0" id="pfeileraddon1" geometry="depth:7;height:5;width:7" material="color:#808080"></a-entity>
+      </a-entity>
 
-    <a-entity position="-11.96 2.14 -34.15" id="quertisch1" geometry="height:4;width:30;depth:5" material=""></a-entity>
 
-    <a-entity position="14.97 2.14 -60.13" id="quertisch2" geometry="height:4;width:30;depth:5" material="" rotation="0 0 0" scale="1 1 1" visible="true"></a-entity>
+      <a-entity position="-13.79 24.59 63.38" id="pfeiler2" geometry="height:50;width:2.5;depth:2.5" material="color:#c0c0c0" rotation="0 0 0" scale="1 1 1" visible="true">
+        <a-entity position="0 -22.27 0" id="pfeileraddon2" geometry="depth:7;height:5;width:7" material="color:#808080" rotation="0 0 0" scale="1 1 1" visible="true"></a-entity>
+      </a-entity>
 
-    <a-entity position="-11.96 2.14 -95.82" id="quertisch3" geometry="height:4;width:30;depth:5" material="" rotation="0 0 0" scale="1 1 1" visible="true"></a-entity>
+      <a-entity position="21.39 24.92 63.43" id="pfeiler3" geometry="height:50;width:2.5;depth:2.5" material="color:#c0c0c0" rotation="0 0 0" scale="1 1 1" visible="true">
+        <a-entity position="0 -22.27 0" id="pfeileraddon2" geometry="depth:7;height:5;width:7" material="color:#808080" rotation="0 0 0" scale="1 1 1" visible="true"></a-entity>
+      </a-entity>
+
+      <a-entity position="18.87 24.62 -26.49" id="pfeiler4" geometry="height:50;width:2.5;depth:2.5" material="color:#c0c0c0" rotation="0 0 0" scale="1 1 1" visible="true">
+        <a-entity position="0 -22.27 0" id="pfeileraddon1" geometry="depth:7;height:5;width:7" material="color:#808080"></a-entity>
+      </a-entity>
+
+      <a-entity position="-13.79 24.32 -117.51" id="pfeiler5" geometry="height:50;width:2.5;depth:2.5" material="color:#c0c0c0" rotation="0 0 0" scale="1 1 1" visible="true">
+        <a-entity position="0 -22.27 0" id="pfeileraddon1" geometry="depth:7;height:5;width:7" material="color:#808080"></a-entity>
+      </a-entity>
+
+      <a-entity position="17.8 24.62 -117.56" id="pfeiler6" geometry="height:50;width:2.5;depth:2.5" material="color:#c0c0c0" rotation="0 0 0" scale="1 1 1" visible="true">
+        <a-entity position="0 -22.27 0" id="pfeileraddon1" geometry="depth:7;height:5;width:7" material="color:#808080"></a-entity>
+      </a-entity>
+
+
+       <!-- Tisch -->
+      <a-entity position="2.29 0 82" id="tischwrap" scale="1.4 1 1.4">
+        <a-plane id="tischplatte" material="side:double" geometry="primitive:box;height:5;width:20;depth:0.5" position="0 4.2 0" rotation="90 0 0"></a-plane>
+        <a-box id="bein1" material="" geometry="primitive:box;height:4" position="-9.45 2.2 1.99"></a-box>
+        <a-box id="bein2" material="" geometry="primitive:box;height:4" position="-9.5 2.2 -2.01"></a-box>
+        <a-box id="bein3" material="" geometry="primitive:box;height:4" position="9.5 2.2 1.98"></a-box>
+        <a-box id="bein4" material="" geometry="primitive:box;height:4" position="9.51 2.2 -1.99"></a-box>
+
+      </a-entity>
+
+      <!-- Fließband -->
+
+      <a-entity mergeto="" position="-17 0 47.14" rotation="0 90 0" scale="4 3.5 4">
+        <a-box width="1" hight="1" depth="1" position="1 1 1 " color="#A0A0A0" material="" geometry="">
+        </a-box>
+        <a-box width="1" hight="1" depth="1" position="1 2 1 " color="#A0A0A0" material="" geometry="">
+        </a-box>
+        <a-cylinder hight="1" radius="0.2" color="#A0A0A0" position="3 1 1 " material="" geometry="">
+        </a-cylinder>
+        <a-cylinder hight="1" radius="0.2" color="#A0A0A0" position="5 1 1 " material="" geometry="">
+        </a-cylinder>
+        <a-cylinder hight="1" radius="0.2" color="#A0A0A0" position="7 1 1 " material="" geometry="">
+        </a-cylinder>
+        <a-cylinder hight="1" radius="0.2" color="#A0A0A0" position="9 1 1 " material="" geometry="">
+        </a-cylinder>
+
+        <a-box width="1" hight="1" depth="1" position="11 1 1 " color="#A0A0A0" material="" geometry="">
+        </a-box>
+        <a-box width="1" hight="1" depth="1" position="11 2 1 " color="#A0A0A0" material="" geometry="">
+        </a-box>
+        <a-box width="10" height="0.1" depth="0.1" position="6 1.5 0.5 " color="#A0A0A0" material="" geometry="">
+        </a-box>
+        <a-box width="10" height="0.1" depth="0.1" position="6 1.5 1.5 " color="#A0A0A0" material="" geometry="">
+        </a-box>
+
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="6 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="2 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="2.5 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="3 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="3.5 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="4 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="4.5 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="5 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="5.5 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="6 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="6.5 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="7 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="7.5 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="8 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="8.5 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="9 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="9.5 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="10 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="10.5 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="1.5 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+
+
+        <a-box width="0.6" height="0.6" depth="0.6" position="1 2 1 " color="#A0A0A0" material="" geometry="">
+          <a-animation attribute="position" repeat="indefinite" from="1 2 1" to="11 2 1" dur="12000"></a-animation>
+
+        </a-box>
+      </a-entity>
+
+
+      <!-- Fließband 2 -->
+
+      <a-entity mergeto="" position="17 0 49.28" rotation="0 90 0" scale="4 3.5 4" visible="true">
+        <a-box width="1" hight="1" depth="1" position="1 1 1 " color="#A0A0A0" material="" geometry="">
+        </a-box>
+        <a-box width="1" hight="1" depth="1" position="1 2 1 " color="#A0A0A0" material="" geometry="">
+        </a-box>
+        <a-cylinder hight="1" radius="0.2" color="#A0A0A0" position="3 1 1 " material="" geometry="">
+        </a-cylinder>
+        <a-cylinder hight="1" radius="0.2" color="#A0A0A0" position="5 1 1 " material="" geometry="">
+        </a-cylinder>
+        <a-cylinder hight="1" radius="0.2" color="#A0A0A0" position="7 1 1 " material="" geometry="">
+        </a-cylinder>
+        <a-cylinder hight="1" radius="0.2" color="#A0A0A0" position="9 1 1 " material="" geometry="">
+        </a-cylinder>
+
+        <a-box width="1" hight="1" depth="1" position="11 1 1 " color="#A0A0A0" material="" geometry="">
+        </a-box>
+        <a-box width="1" hight="1" depth="1" position="11 2 1 " color="#A0A0A0" material="" geometry="">
+        </a-box>
+        <a-box width="10" height="0.1" depth="0.1" position="6 1.5 0.5 " color="#A0A0A0" material="" geometry="">
+        </a-box>
+        <a-box width="10" height="0.1" depth="0.1" position="6 1.5 1.5 " color="#A0A0A0" material="" geometry="">
+        </a-box>
+
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="6 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="2 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="2.5 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="3 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="3.5 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="4 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="4.5 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="5 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="5.5 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="6 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="6.5 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="7 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="7.5 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="8 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="8.5 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="9 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="9.5 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="10 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="10.5 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+        <a-entity geometry="primitive: cylinder; height: 1; radius: 0.2; depth: 6; width: 6; segmentsRadial: 10" material="color: #A0A0A0" rotation="90 90 90" position="1.5 1.5 1 ">
+          <a-animation attribute="rotation" repeat="indefinite" to="450 90 90"></a-animation>
+
+        </a-entity>
+
+
+        <a-box width="0.6" height="0.6" depth="0.6" position="1 2 1 " color="#A0A0A0" material="" geometry="">
+          <a-animation attribute="position" repeat="indefinite" from="1 2 1" to="11 2 1" dur="12000"></a-animation>
+
+        </a-box>
+      </a-entity>
+
+
 
       <!-- Sky -->
       <a-sky color="#ECECEC"></a-sky>
 
 
     <!-- Kamera -->
-      <a-entity position="3 6 59.9" camera="active:true;userHeight:1.6;near:0.01" wasd-controls="" rotation="-11.910932652268 0 0" look-controls="" aframe-injected="" data-aframe-inspector="default-camera" id="kamera"></a-entity>
-
+      <a-entity position="2.34 7.6 52.62" camera="active:true;userHeight:1.6;near:0.01;far:1000" wasd-controls="acceleration:200" rotation="-9.45 361 0" look-controls="" aframe-injected="" data-aframe-inspector="default-camera" id="kamera"></a-entity>
       <!-- Licht -->
 
     </a-scene>
