@@ -11,22 +11,29 @@
 
       <!-- Vorgeladene Assets -->
       <!---->
-      <a-assets>
-        <!-- Figuren -->
+        <a-assets>
+            <!-- Figuren -->
+            <!---->
+            <!-- Arbeiter -->
+            <a-asset-item id="arbeiterFigur" src="Figuren/StandardPersonkniend.dae"></a-asset-item>
+
+            <!-- Ton -->
+            <!-- Ton-Hintergrund -->
+            <audio id="soundHund" src="ton/fabrikgeraeusche/bellende_hunde.mp3"></audio>
+            <audio id="soundFabrik" src="ton/fabrikgeraeusche/fabrikgeraeusche.mp3"></audio>
+            <audio id="soundFließband" src="ton/fabrikgeraeusche/fließbandgeraeusch.mp3"></audio>
+        </a-assets>
+
+
+        <!-- Hintergrundgeräusche - Fabrik-->
+        <a-entity sound="src: #soundHund; autoplay: true; loop:true; volume: 3;"></a-entity>
+        <a-entity sound="src: #soundFabrik; autoplay: true; loop:true; volume: 3;"></a-entity>
+        <a-entity sound="src: #soundFließband; autoplay: true; loop:true; volume: 3;"></a-entity>
+        !---->
+        <!--Man kann den Ton auch an Objekte hängen - Kann man z.B. später bei den Fließbändern ausprobieren-->
         <!---->
-        <!-- Arbeiter -->
-        <a-asset-item id="arbeiterFigur" src="Figuren/StandardPersonkniend.dae"></a-asset-item>
 
-        <!-- Ton -->
-        <!-- Ton-Hintergrund -->
-        <!--<audio id="volkanMusik" src="ton/volkanSaz01.mp3"></audio>-->
-
-        <!--Ton-Narration -->
-        <!--<audio id="introwt11" src="ton/prolog_1_3_1wm1.mp3"></audio>-->
-      </a-assets>
-
-
-      <!--Figuren-->
+        <!--Figuren-->
       <!---->
       <!--Arbeiter - Links -->
       <!--L1-->
@@ -985,9 +992,12 @@
 
       <!-- Kamera -->
       <a-entity position="-16 6 -10" camera="active:true;userHeight:1.6;near:0.01;far:1000" wasd-controls="acceleration:200" rotation="-42.91 268.52 0" look-controls="" aframe-injected="" data-aframe-inspector="default-camera" id="kamera"></a-entity>
+
       <!-- Licht -->
       <a-light type="ambient" color="#242e33" intensity=".3" position="0 10 -50"></a-light>
       <a-light type="spot" color="#FF7748" intensity=".6" position="-10 3 89.73"></a-light>
+
+
     </a-scene>
   </body>
 </html>
