@@ -11,19 +11,151 @@
 
       <!-- Vorgeladene Assets -->
       <!---->
-      <a-assets>
-        <!-- Figuren -->
+        <a-assets>
+            <!-- Figuren -->
+            <!---->
+            <!-- Arbeiter -->
+            <a-asset-item id="arbeiterFigur" src="Figuren/StandardPersonkniend.dae"></a-asset-item>
+
+            <!-- Ton -->
+            <!-- Ton-Hintergrund -->
+            <audio id="soundHund" src="ton/fabrikgeraeusche/bellende_hunde.mp3"></audio>
+            <audio id="soundFabrik" src="ton/fabrikgeraeusche/fabrikgeraeusche.mp3"></audio>
+            <audio id="soundFließband" src="ton/fabrikgeraeusche/fließbandgeraeusch.mp3"></audio>
+        </a-assets>
+
+
+        <!-- Hintergrundgeräusche - Fabrik-->
+        <a-entity sound="src: #soundHund; autoplay: true; loop:true; volume: 3;"></a-entity>
+        <a-entity sound="src: #soundFabrik; autoplay: true; loop:true; volume: 3;"></a-entity>
+        <a-entity sound="src: #soundFließband; autoplay: true; loop:true; volume: 3;"></a-entity>
+        !---->
+        <!--Man kann den Ton auch an Objekte hängen - Kann man z.B. später bei den Fließbändern ausprobieren-->
         <!---->
-        <!-- Arbeiter -->
-        <a-asset-item id="arbeiterFigur" src="Figuren/StandartPersonkniend.max"></a-asset-item>
 
-        <!-- Ton -->
-        <!-- Ton-Hintergrund -->
-        <!--<audio id="volkanMusik" src="ton/volkanSaz01.mp3"></audio>-->
+        <!--Figuren-->
+      <!---->
+      <!--Arbeiter - Links -->
+      <!--L1-->
+      <a-entity id="arbeiter1_l1" collada-model="#arbeiterFigur" position ="-17 -1.5 50" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter2_l1" collada-model="#arbeiterFigur" position ="-17 -1.5 45" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter3_l1" collada-model="#arbeiterFigur" position ="-17 -1.5 40" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter4_l1" collada-model="#arbeiterFigur" position ="-17 -1.5 35" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter5_l1" collada-model="#arbeiterFigur" position ="-17 -1.5 30" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter6_l1" collada-model="#arbeiterFigur" position ="-17 -1.5 25" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <!--L2-->
+      <a-entity id="arbeiter1_l2" collada-model="#arbeiterFigur" position ="-17 -1.5 10" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter2_l2" collada-model="#arbeiterFigur" position ="-17 -1.5 5" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter3_l2" collada-model="#arbeiterFigur" position ="-17 -1.5 0" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter4_l2" collada-model="#arbeiterFigur" position ="-17 -1.5 -5" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <!--Kamera - Blickposition - Deshalb diesen Arbeiter umpositioniert-->
+      <a-entity id="arbeiter5_l2" collada-model="#arbeiterFigur" position ="-9 -1.5 -18" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <!---->
+      <a-entity id="arbeiter6_l2" collada-model="#arbeiterFigur" position ="-17 -1.5 -15" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <!--L3-->
+      <a-entity id="arbeiter1_l3" collada-model="#arbeiterFigur" position ="-17 -1.5 -40" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter2_l3" collada-model="#arbeiterFigur" position ="-17 -1.5 -45" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter3_l3" collada-model="#arbeiterFigur" position ="-17 -1.5 -50" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter4_l3" collada-model="#arbeiterFigur" position ="-17 -1.5 -55" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter5_l3" collada-model="#arbeiterFigur" position ="-17 -1.5 -60" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter6_l3" collada-model="#arbeiterFigur" position ="-17 -1.5 -65" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <!--L4-->
+      <a-entity id="arbeiter1_l4" collada-model="#arbeiterFigur" position ="-17 -1.5 -80" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter2_l4" collada-model="#arbeiterFigur" position ="-17 -1.5 -85" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter3_l4" collada-model="#arbeiterFigur" position ="-17 -1.5 -90" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter4_l4" collada-model="#arbeiterFigur" position ="-17 -1.5 -95" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter5_l4" collada-model="#arbeiterFigur" position ="-17 -1.5 -100" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter6_l4" collada-model="#arbeiterFigur" position ="-17 -1.5 -105" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>s
+      <!--L5-->
+      <a-entity id="arbeiter1_l5" collada-model="#arbeiterFigur" position ="-9 -1.5 53" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter2_l5" collada-model="#arbeiterFigur" position ="-9 -1.5 48" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter3_l5" collada-model="#arbeiterFigur" position ="-9 -1.5 43" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter4_l5" collada-model="#arbeiterFigur" position ="-9 -1.5 38" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter5_l5" collada-model="#arbeiterFigur" position ="-9 -1.5 33" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter6_l5" collada-model="#arbeiterFigur" position ="-9 -1.5 28" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <!--L6-->
+      <a-entity id="arbeiter1_l6" collada-model="#arbeiterFigur" position ="-9 -1.5 13" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter2_l6" collada-model="#arbeiterFigur" position ="-9 -1.5 8" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter3_l6" collada-model="#arbeiterFigur" position ="-9 -1.5 3" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter4_l6" collada-model="#arbeiterFigur" position ="-9 -1.5 -2" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter5_l6" collada-model="#arbeiterFigur" position ="-9 -1.5 -7" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter6_l6" collada-model="#arbeiterFigur" position ="-9 -1.5 -12" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <!--L7-->
+      <a-entity id="arbeiter1_l7" collada-model="#arbeiterFigur" position ="-9 -1.5 -37" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter2_l7" collada-model="#arbeiterFigur" position ="-9 -1.5 -42" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter3_l7" collada-model="#arbeiterFigur" position ="-9 -1.5 -47" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter4_l7" collada-model="#arbeiterFigur" position ="-9 -1.5 -52" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter5_l7" collada-model="#arbeiterFigur" position ="-9 -1.5 -57" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter6_l7" collada-model="#arbeiterFigur" position ="-9 -1.5 -62" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <!--L8-->
+      <a-entity id="arbeiter1_l8" collada-model="#arbeiterFigur" position ="-9 -1.5 -77" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter2_l8" collada-model="#arbeiterFigur" position ="-9 -1.5 -82" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter3_l8" collada-model="#arbeiterFigur" position ="-9 -1.5 -87" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter4_l8" collada-model="#arbeiterFigur" position ="-9 -1.5 -92" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter5_l8" collada-model="#arbeiterFigur" position ="-9 -1.5 -97" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter6_l8" collada-model="#arbeiterFigur" position ="-9 -1.5 -102" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <!---->
 
-        <!--Ton-Narration -->
-        <!--<audio id="introwt11" src="ton/prolog_1_3_1wm1.mp3"></audio>-->
-      </a-assets>
+      <!--Arbeiter - Rechts -->
+      <!--R1-->
+      <a-entity id="arbeiter1_r1" collada-model="#arbeiterFigur" position ="24 -1.5 50" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter2_r1" collada-model="#arbeiterFigur" position ="24 -1.5 45" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter3_r1" collada-model="#arbeiterFigur" position ="24 -1.5 40" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter4_r1" collada-model="#arbeiterFigur" position ="24 -1.5 35" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter5_r1" collada-model="#arbeiterFigur" position ="24 -1.5 30" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter6_r1" collada-model="#arbeiterFigur" position ="24 -1.5 25" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <!--R2-->
+      <a-entity id="arbeiter1_r2" collada-model="#arbeiterFigur" position ="24 -1.5 10" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter2_r2" collada-model="#arbeiterFigur" position ="24 -1.5 5" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter3_r2" collada-model="#arbeiterFigur" position ="24 -1.5 0" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter4_r2" collada-model="#arbeiterFigur" position ="24 -1.5 -5" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter5_r2" collada-model="#arbeiterFigur" position ="24 -1.5 -10" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter6_r2" collada-model="#arbeiterFigur" position ="24 -1.5 -15" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <!--R3-->
+      <a-entity id="arbeiter1_r3" collada-model="#arbeiterFigur" position ="24 -1.5 -40" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter2_r3" collada-model="#arbeiterFigur" position ="24 -1.5 -45" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter3_r3" collada-model="#arbeiterFigur" position ="24 -1.5 -50" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter4_r3" collada-model="#arbeiterFigur" position ="24 -1.5 -55" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter5_r3" collada-model="#arbeiterFigur" position ="24 -1.5 -60" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter6_r3" collada-model="#arbeiterFigur" position ="24 -1.5 -65" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <!--R4-->
+      <a-entity id="arbeiter1_r4" collada-model="#arbeiterFigur" position ="24 -1.5 -80" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter2_r4" collada-model="#arbeiterFigur" position ="24 -1.5 -85" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter3_r4" collada-model="#arbeiterFigur" position ="24 -1.5 -90" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter4_r4" collada-model="#arbeiterFigur" position ="24 -1.5 -95" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter5_r4" collada-model="#arbeiterFigur" position ="24 -1.5 -100" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+      <a-entity id="arbeiter6_r4" collada-model="#arbeiterFigur" position ="24 -1.5 -105" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
+
+
+      <!--R5-->
+      <a-entity id="arbeiter1_r5" collada-model="#arbeiterFigur" position ="17 -1.5 53" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter2_r5" collada-model="#arbeiterFigur" position ="17 -1.5 48" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter3_r5" collada-model="#arbeiterFigur" position ="17 -1.5 43" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter4_r5" collada-model="#arbeiterFigur" position ="17 -1.5 38" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter5_r5" collada-model="#arbeiterFigur" position ="17 -1.5 33" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter6_r5" collada-model="#arbeiterFigur" position ="17 -1.5 28" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <!--R6-->
+      <a-entity id="arbeiter1_r6" collada-model="#arbeiterFigur" position ="17 -1.5 13" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter2_r6" collada-model="#arbeiterFigur" position ="17 -1.5 8" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter3_r6" collada-model="#arbeiterFigur" position ="17 -1.5 3" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter4_r6" collada-model="#arbeiterFigur" position ="17 -1.5 -2" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter5_r6" collada-model="#arbeiterFigur" position ="17 -1.5 -7" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter6_r6" collada-model="#arbeiterFigur" position ="17 -1.5 -12" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <!--R7-->
+      <a-entity id="arbeiter1_r7" collada-model="#arbeiterFigur" position ="17 -1.5 -37" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter2_r7" collada-model="#arbeiterFigur" position ="17 -1.5 -42" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter3_r7" collada-model="#arbeiterFigur" position ="17 -1.5 -47" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter4_r7" collada-model="#arbeiterFigur" position ="17 -1.5 -52" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter5_r7" collada-model="#arbeiterFigur" position ="17 -1.5 -57" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter6_r7" collada-model="#arbeiterFigur" position ="17 -1.5 -62" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <!--R8-->
+      <a-entity id="arbeiter1_r8" collada-model="#arbeiterFigur" position ="17 -1.5 -77" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter2_r8" collada-model="#arbeiterFigur" position ="17 -1.5 -82" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter3_r8" collada-model="#arbeiterFigur" position ="17 -1.5 -87" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter4_r8" collada-model="#arbeiterFigur" position ="17 -1.5 -92" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter5_r8" collada-model="#arbeiterFigur" position ="17 -1.5 -97" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+      <a-entity id="arbeiter6_r8" collada-model="#arbeiterFigur" position ="17 -1.5 -102" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
+
 
 
       <!--Fabrik-->
@@ -855,22 +987,16 @@
       </a-entity>
 
 
-      <!--Figuren-->
-      <!---->
-      <!--Arbeiter-->
-      <a-entity id="wassertraeger" collada-model="#wasserFigur" scale="2 2 2" color="white" position ="0 0 85" rotation="0 180 0">
-        <a-animation attribute="position" from="0 0 85" to="0 0 5" delay="500" dur="50000"></a-animation>
-        <a-animation attribute="rotation" direction="alternate" from="0 180 -4" to="0 180 4" delay="500" dur="1500" repeat="10"></a-animation>
-        </a-animation>
-      </a-entity>
-
-
       <!-- Sky -->
       <a-sky color="#ECECEC"></a-sky>
 
       <!-- Kamera -->
-      <a-entity position="2.34 7.6 52.62" camera="active:true;userHeight:1.6;near:0.01;far:1000" wasd-controls="acceleration:200" rotation="-9.45 361 0" look-controls="" aframe-injected="" data-aframe-inspector="default-camera" id="kamera"></a-entity>
+      <a-entity position="-16 6 -10" camera="active:true;userHeight:1.6;near:0.01;far:1000" wasd-controls="acceleration:200" rotation="-42.91 268.52 0" look-controls="" aframe-injected="" data-aframe-inspector="default-camera" id="kamera"></a-entity>
+
       <!-- Licht -->
+      <a-light type="ambient" color="#242e33" intensity=".3" position="0 10 -50"></a-light>
+      <a-light type="spot" color="#FF7748" intensity=".6" position="-10 3 89.73"></a-light>
+
 
       <a-light type="ambient" color="#242e33" intensity=".3" position="0 10 -50"></a-light>
       <a-light type="spot" color="#FF7748" intensity=".6" position="-10 3 89.73"></a-light>
