@@ -7,7 +7,7 @@
     <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
   </head>
   <body>
-    <a-scene>
+    <a-scene fog="type: linear; color: #b59e7e; far: 200; near: 0; density: .5">
 
       <!-- Vorgeladene Assets -->
       <!---->
@@ -28,7 +28,7 @@
 
       <!--Figuren-->
       <!---->
-      <!--Arbeiter -- Links -->
+      <!--Arbeiter - Links -->
       <!--L1-->
       <a-entity id="arbeiter1_l1" collada-model="#arbeiterFigur" position ="-17 -1.5 50" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
       <a-entity id="arbeiter2_l1" collada-model="#arbeiterFigur" position ="-17 -1.5 45" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
@@ -41,7 +41,7 @@
       <a-entity id="arbeiter2_l2" collada-model="#arbeiterFigur" position ="-17 -1.5 5" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
       <a-entity id="arbeiter3_l2" collada-model="#arbeiterFigur" position ="-17 -1.5 0" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
       <a-entity id="arbeiter4_l2" collada-model="#arbeiterFigur" position ="-17 -1.5 -5" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
-      <!--Kamera -- Blickposition -- Deshalb diesen Arbeiter umpositioniert-->
+      <!--Kamera - Blickposition - Deshalb diesen Arbeiter umpositioniert-->
       <a-entity id="arbeiter5_l2" collada-model="#arbeiterFigur" position ="-9 -1.5 -18" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
       <!---->
       <a-entity id="arbeiter6_l2" collada-model="#arbeiterFigur" position ="-17 -1.5 -15" scale="5 7 5" color="white"  rotation="0 90 0"></a-entity>
@@ -89,7 +89,7 @@
       <a-entity id="arbeiter6_l8" collada-model="#arbeiterFigur" position ="-9 -1.5 -102" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
       <!---->
 
-      <!--Arbeiter -- Rechts -->
+      <!--Arbeiter - Rechts -->
       <!--R1-->
       <a-entity id="arbeiter1_r1" collada-model="#arbeiterFigur" position ="24 -1.5 50" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
       <a-entity id="arbeiter2_r1" collada-model="#arbeiterFigur" position ="24 -1.5 45" scale="5 7 5" color="white"  rotation="0 -90 0"></a-entity>
@@ -986,7 +986,8 @@
       <!-- Kamera -->
       <a-entity position="-16 6 -10" camera="active:true;userHeight:1.6;near:0.01;far:1000" wasd-controls="acceleration:200" rotation="-42.91 268.52 0" look-controls="" aframe-injected="" data-aframe-inspector="default-camera" id="kamera"></a-entity>
       <!-- Licht -->
-
+      <a-light type="ambient" color="#242e33" intensity=".3" position="0 10 -50"></a-light>
+      <a-light type="spot" color="#FF7748" intensity=".6" position="-10 3 89.73"></a-light>
     </a-scene>
   </body>
 </html>
