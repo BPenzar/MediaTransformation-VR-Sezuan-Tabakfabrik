@@ -10,7 +10,7 @@
     <a-scene fog="type: linear; color: #b59e7e; far: 200; near: 0; density: .5">
 
       <!-- Vorgeladene Assets -->
-      <!---->
+      <!-- -->
         <a-assets>
             <!-- Figuren -->
             <!---->
@@ -1000,7 +1000,18 @@
 
       <!-- Licht -->
       <a-light type="ambient" color="#242e33" intensity=".3" position="0 10 -50"></a-light>
-      <a-light type="spot" color="#FF7748" intensity=".6" position="-10 3 89.73"></a-light>
+      <a-light type="spot" color="#FF7748" intensity=".6" position="-10 3 89.73">
+        <a-animation v-if="style === 'neon'" attribute="intensity" dur="100" fill="forwards" from="1" to="0" direction="alternate" repeat="indefinite">
+        </a-animation>
+
+        <a-animation v-if="style === 'redalert'" attribute="intensity" dur="500" fill="forwards" from="1" to="0" direction="alternate" repeat="indefinite"></a-animation>
+
+        <a-animation v-if="style === 'candlelight'" attribute="intensity" dur="50" fill="forwards" from="1" to="0.9" direction="alternate" easing="ease" repeat="indefinite"></a-animation>
+
+        <a-animation v-if="style === 'basement'" attribute="intensity" dur="1000" fill="forwards" from="1" to="0.2" direction="alternate" easing="ease" repeat="indefinite"></a-animation>
+
+
+      </a-light>
 
 
       <a-light type="ambient" color="#242e33" intensity=".3" position="0 10 -50"></a-light>
