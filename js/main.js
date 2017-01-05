@@ -93,10 +93,11 @@ AFRAME.registerComponent('fliessband-animate', {
           ist dies der Fall und sollte der zustand true sein, sendet der ein event an die hitbox
           danach setzt er den zustand auf false und setzt den zeitzähler zurück.
           Der Zustand soll verhindern, dass zwei mal das gleiche Event hintereinander gesendet wird*/
+
         this.el.addEventListener('nolook', function(){
             zeit ++;
 
-            if ( zeit === 4 && zustand == 'true'){
+            if ( zeit === 3 && zustand == 'true'){
                 data.target.emit(data.aevent);
                 zustand = 'false';
                 zeit = 0;
@@ -106,10 +107,12 @@ AFRAME.registerComponent('fliessband-animate', {
           Ist dies der Fall und sollte der zustand false sein, sendet er das gegenevent an die hitbox
           danach setzt er den zustand auf true und den zeitzähler zurück.*/
         this.el.addEventListener('look', function(){
+            zeit = 0;
+
             if( zustand == 'false'){
                 data.target.emit(data.aevent2);
                 zustand = 'true';
-                zeit = 0;
+
             }
         });
     }
