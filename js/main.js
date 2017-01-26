@@ -63,19 +63,22 @@ AFRAME.registerComponent('event-animate', {
 AFRAME.registerComponent('fliessband-animate', {
     schema: {
         target: {type: 'selector'},
-        aevent: {default: 'animation1'}, // 'nolook' animation
-        aevent2: {default: 'animation2'} // 'look' animation
+        aevent: {default: 'nolook'},
+        aevent2: {default: 'look'}
     },
 
     init: function () {
         var data = this.data;
         var kamera = this.el;
-        var zustand = 'true';
-        var zeit = 0;
+        var zustand = true;
+        var zeit1 = 0;
+        var zeit2 = 0;
+
+
 
         /* Funktion, die jede Sekunde prüft ob man nach x-Achsen-Wert auf das Fließband schaut.
-           Ist dies nicht der Fall, sendet sie ein nolook event an sich selbst
-           Standardmäßig sendet sie ein look event.*/
+         Ist dies nicht der Fall, sendet sie ein nolook event an sich selbst
+         Standardmäßig sendet sie ein look event.*/
         setInterval( function () {
 
             var firstRotation = kamera.getAttribute('rotation');
@@ -83,6 +86,7 @@ AFRAME.registerComponent('fliessband-animate', {
 
             if (myRotation > -35 || myRotation < -82)  {
                 kamera.emit('nolook');
+
             }
             else {
                 kamera.emit('look');
@@ -90,29 +94,39 @@ AFRAME.registerComponent('fliessband-animate', {
         }, 1000);
 
         /*Eventhandler, der prüft ob 4 mal hintereinander (also 4 sekunden lang) das nolook event gesendet wurde
-          ist dies der Fall und sollte der zustand true sein, sendet der ein event an die hitbox
-          danach setzt er den zustand auf false und setzt den zeitzähler zurück.
-          Der Zustand soll verhindern, dass zwei mal das gleiche Event hintereinander gesendet wird*/
+         ist dies der Fall und sollte der zustand true sein, sendet der ein event an die hitbox
+         danach setzt er den zustand auf false und setzt den zeitzähler zurück.
+         Der Zustand soll verhindern, dass zwei mal das gleiche Event hintereinander gesendet wird*/
 
         this.el.addEventListener('nolook', function(){
-            zeit ++;
+            zeit1 ++;
+            zeit2 = 0;
+            var position = kamera.getAttribute('position');
+            var myposition = position[Object.keys(position)[0]];
 
-            if ( zeit === 3 && zustand == 'true'){
+            if ( zeit1 === 4 && zustand == true && myposition == -16){
+                console.log("noloook");
                 data.target.emit(data.aevent);
-                zustand = 'false';
-                zeit = 0;
+                zustand = false;
+                zeit1 = 0;
+                zeit2 = 0;
             }
         });
         /*Eventhandler, der prüft ob wieder auf das Fließband geschaut wurde
-          Ist dies der Fall und sollte der zustand false sein, sendet er das gegenevent an die hitbox
-          danach setzt er den zustand auf true und den zeitzähler zurück.*/
+         Ist dies der Fall und sollte der zustand false sein, sendet er das gegenevent an die hitbox
+         danach setzt er den zustand auf true und den zeitzähler zurück.*/
         this.el.addEventListener('look', function(){
-            zeit = 0;
+            zeit2 ++;
+            zeit1 = 0;
+            var position = kamera.getAttribute('position');
+            var myposition = position[Object.keys(position)[0]];
 
-            if( zustand == 'false'){
+            if( zeit2 === 2 && zustand == false && myposition == -16 ){
+                console.log("loook");
                 data.target.emit(data.aevent2);
-                zustand = 'true';
-
+                zustand = true;
+                zeit1 = 0;
+                zeit2 = 0;
             }
         });
     }
