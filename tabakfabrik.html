@@ -9,7 +9,7 @@
     <script src="js/main.js"></script>
   </head>
   <body>
-    <a-scene fog="type: linear; color: #b59e7e; far: 200; near: 0; density: .5">
+    <a-scene <!--fog="type: linear; color: #b59e7e; far: 200; near: 0; density: .5"-->>
 
       <!-- Vorgeladene Assets -->
       <a-assets>
@@ -1032,23 +1032,18 @@
 
       <!--Außen Landschaft -->
       <a-entity position="0 -0.01 -48.98" rotation="-90 -1 0" id="erde" geometry="primitive:plane;height:300;width:80" material=" color:#000000" scale="50 50 50"></a-entity>
-      <a-entity id="Haus1" position="500 250 0" scale="100 500 100" geometry="" material="color: #7c7c7c"></a-entity>
+      <a-entity id="Haus1" position="330 75 -270" scale="100 500 100" geometry="" material="color: #7c7c7c"></a-entity>
     <a-entity id="Haus2" position="328.7 250 424.81" scale="100 500 100" geometry="" material="color: #7c7c7c"></a-entity>
-    <a-entity id="Haus3" position="328.7 250 -475.58" scale="100 500 100" geometry="" material="color: #7c7c7c"></a-entity>
-      <a-entity id="Haus4" position="275.86 115.61 218.48" scale="100 500 100" geometry="" material="color:#7c7c7c"></a-entity>      <!-- Kamera-->
-      <!--<a-entity position="-16 6 -10" camera="active:true;userHeight:1.6;near:0.01;far:1000" wasd-controls="acceleration:200" rotation="-42.91 268.52 0" look-controls="" aframe-injected="" data-aframe-inspector="default-camera" id="kamera"></a-entity>-->
+    <a-entity id="Haus3" position="50 250 -600" scale="100 500 100" geometry="" material="color: #7c7c7c"></a-entity>
+      <a-entity id="Haus4" position="275.86 115.61 30" scale="100 500 100" geometry="" material="color:#7c7c7c"></a-entity>
+    <a-entity id="Haus5" position="-500 250 0" scale="100 500 100" geometry="" material="color: #7c7c7c"></a-entity>
+    <a-entity id="Haus6" position="-328.7 50 -200" scale="100 100 100" geometry="" material="color: #7c7c7c"></a-entity>
+    <a-entity id="Haus7" position="-160 -77 550" scale="100 500 100" geometry="" material="color: #7c7c7c"></a-entity>
 
-      <!-- Kamerafahrt 1-->
-      <!--<a-entity position="-13 6 53" camera="active:true;userHeight:1.6;near:0.01;far:1000" look-controls="" wasd-controls="acceleration:200" rotation="-3.1 0 0"  id="kamera">-->
-        <!--<a-animation attribute="position" begin="5000" dur="30000" to="-13 6 -105"></a-animation>-->
-        <!--<a-animation attribute="position" begin="34000" dur="5000" from="-13 6 -105" to="2 12 -105"></a-animation>-->
-        <!--<a-animation attribute="position" begin="38000" dur="5000" from="2 12 -105" to="21 6 -105"></a-animation>-->
-        <!--<a-animation attribute="position" begin="43000" dur="30000" from="21 6 -105" to="21 6 52"></a-animation>-->
-        <!--<a-animation attribute="position" begin="72000" dur="5000" from="21 6 52" to="-16 6 -10"></a-animation>-->
-      <!--</a-entity>-->
 
-      <!-- Kamerafahrt 2-->
-      <a-entity position="-120 30 100"
+
+
+    <a-entity position="-120 30 100"
                 camera="active:true;userHeight:1.6;near:0.01;far:1000"
                 look-controls=""
                 rotation="0 300 0"
